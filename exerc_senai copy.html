@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Controle de Estoque
+window.alert("Olá Mundo") 
+
+// ** Inserir Valor de estoque **
+    var Estoque = parseFloat(prompt("Informe o Estoque Inicial"));
+    document.write("Estoque Inicial: " + Estoque + "<br>");
+    
+
+// **Inserir quantidade e tipo de operação: Compra ou venda)
+   var Quantidade = parseFloat(prompt("informe Quantidade"));
+   var Operação = prompt("Informe a operação compra (1) ou venda (2)?");
+   
+    //(if(operação=1)"Compra" 
+    //else(Operação=2 "Venda" ) )
+    //tentar colocardocument.write( Condição acima + " de " Quantidade "peças" "<br>"
+
+
+//Executa operação de somar ou reduzir quantidade
+
+do {
+    
+    // Compra // 
+
+    if (Operação = "1") {Estoque = Estoque + Quantidade
+        document.write("Estoque: " + Estoque + "<br>")
+    
+
+    } else {
+    
+    // Venda //    
+       
+    if(operação = "2") 
+        Estoque = Estoque - Quantidade
+        document.write("Estoque: " + Estoque + "<br>")
+    
+    if(Estoque < 0)
+    prompt("Operação Inválida. Venda maior que o estoque disponível")
+    document.write("Estoque Negativo"  + "<br>"); 
+    }
+}        
+    
+
+    
+    
+
+    
+    
+// Caso negativo, Mostrar saldo final.  
+
+while(prompt("Continua? Sim ou Não") = "Sim")
+    prompt("Sistema Encerrado")
+
+    
+
+
+    
+     
+
+
+
+
+</script>
+</body>
+</html>
